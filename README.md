@@ -9,16 +9,42 @@ Evidence packet version 0.6; restart-brief format 1; return-comparison format 1.
 ## Run
 
 Requires Python 3.10+, Git, and a browser. There are no pip dependencies.
-On macOS, open `Start.command`, or run from this extracted folder:
+Clone and start the app:
 
 ```bash
-cd /path/to/pick-up-here
+git clone https://github.com/zacharymplace/pick-up-here.git
+cd pick-up-here
 python3 app.py --open
 ```
+
+If you downloaded an archive instead, extract it and run `python3 app.py --open`
+from that folder; on macOS you can also open `Start.command`.
 
 Keep Terminal open. Use the printed 127.0.0.1 address. If the port is occupied,
 run `python3 app.py --port 8766 --open`. Enter a Git repository root, or use
 the native Choose folder button on macOS. Other systems support pasted paths.
+
+## First inspection and example output
+
+1. Start the app with the command above and open the printed local URL.
+2. Enter the absolute path to a Git repository you already have on disk. You can
+   inspect this clone first; on macOS, **Choose folder** also works.
+3. Collect facts and review the evidence before requesting any AI suggestion.
+4. Download a restart brief, then reopen it with **Saved restart brief** to try
+   the return flow below. No model or API key is needed for these steps.
+
+Expected startup output at the default port:
+
+```text
+Pick Up Here 0.1.0-rc.7: http://127.0.0.1:8765
+Keep this terminal open. Press Ctrl+C to stop.
+```
+
+Use the address actually printed if you selected another port. For a visual
+walkthrough, see the [captioned RC.7 demo](demo/rc7-demo-captioned.mp4).
+This is a prototype: collecting repository facts does not run its tests or
+establish that its software works. Saved briefs can contain private source
+excerpts; review them before sharing.
 
 ## Local AI
 
