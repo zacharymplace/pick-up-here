@@ -1,6 +1,6 @@
 # RC.7 workflow demo
 
-[Watch or download the captioned MP4](https://raw.githubusercontent.com/zacharymplace/pick-up-here/main/demo/rc7-demo-captioned.mp4).
+[Open the captioned MP4](https://github.com/zacharymplace/pick-up-here/blob/main/demo/rc7-demo-captioned.mp4), then choose **Download raw file**.
 
 This 28.32-second recording shows real local Gemma inference on a synthetic
 Workshop repository, saving/reopening a brief, fresh comparison after a harness

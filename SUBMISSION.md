@@ -26,7 +26,7 @@ read-only historical viewer that checks integrity and recomputes the comparison.
 
 ## Demo
 
-[Watch the captioned RC.7 demo](https://raw.githubusercontent.com/zacharymplace/pick-up-here/main/demo/rc7-demo-captioned.mp4).
+[Download the captioned RC.7 demo](https://github.com/zacharymplace/pick-up-here/blob/main/demo/rc7-demo-captioned.mp4) using **Download raw file**.
 
 The accompanying RC.7 recording uses a synthetic Workshop repository and a real
 local Gemma call. It shows facts → supported proposal → save brief → reload and
