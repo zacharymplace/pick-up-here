@@ -59,7 +59,8 @@ function returnSummary(result,reason,target=$('comparison'),id='return-summary')
         if(result.truncated_sources.length)box.append(node('p','Full source text unavailable: '+result.truncated_sources.length+' source labels have truncated collected evidence. Only retained text was compared.','small'));
         const clipped=result.diff_previews.filter(d=>d.input_truncated||d.diff_truncated).length;
         if(clipped||result.diff_previews_omitted)box.append(node('p','Preview limits: '+clipped+' clipped previews; '+result.diff_previews_omitted+' source previews omitted. These limits do not change the retained-text comparison counts.','small'));
-        const identical=node('details');identical.append(node('summary','Identical retained sources ('+result.unchanged_sources.length+')'));
+        // Keep source names visible: collapsed details can omit them from plain-text copy.
+        const identical=node('div');identical.append(node('h4','Identical retained sources ('+result.unchanged_sources.length+')'));
         const list=node('ul');for(const source of result.unchanged_sources)list.append(node('li',source));if(!result.unchanged_sources.length)list.append(node('li','None'));identical.append(list);box.append(identical);
         box.append(node('p','Scope: collected excerpts only. Uncollected content, runtime behavior, tests, and live connections were not compared. Identical excerpts do not prove identical files.','small'));
     }

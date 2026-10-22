@@ -21,3 +21,13 @@ The launcher encountered occupied ports; `python3 app.py --port 0 --open` worked
 
 This source and captioned demo are being published as RC.7. No stable release
 promotion or DEV post submission is implied.
+
+October 22, 2026 copy follow-up: the earlier collapsed identical-source list
+omitted names from plain-text copy in both live and reopened comparisons.
+The shared summary now renders those names as an always-visible heading/list.
+Actual keyboard-copy checks in the macOS in-app browser retained all four
+fixture labels in both views without expansion; HTML clipboard items were
+also populated. All 98 Python tests passed after the UI fix. Comparison
+calculations and export formats are unchanged. This is a UI correction to
+RC.7, not a stable release or broad clipboard-compatibility qualification.
+The exact historical empty-bullet rendering was not reproduced.

@@ -110,5 +110,9 @@ pending. This package does not declare stable 0.1.0 or v1.0.
 
 See [the captioned demo](demo/rc7-demo-captioned.mp4) and [submission draft](SUBMISSION.md).
 The Mac save/reopen/compare/export/reopen workflow was subsequently confirmed
-by the operator. Empty identical-source bullets in copied output remain unresolved.
+by the operator. Identical-source names are now always visible in live and
+reopened comparison summaries. Browser clipboard checks on macOS confirmed
+that plain-text copying retains the names without an expand-before-copy step.
+The earlier literal empty-bullet report was not reproduced; other browsers
+and paste destinations remain unverified.
 MIT application code; Gemma remains subject to its own terms. See ATTRIBUTION.md.
